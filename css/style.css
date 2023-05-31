@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+	--color-textos:#606060;
+	--color-negro:#000;
+	--fondo-header:#f4f3f7;
+	--color-menu:#121212;
+	--color-menu-hover:#218fe6;
+	--color-titulos:#303030;
+	--color-azul:#218fe6;
+	--fondo-gris:#f8f8f8;
+	--color-letra-gris:#888;
+	--color-subtitulo:#777;
+	--fondo-footer-columns:#1b1b1b;
+	--fondo-footer-copy:#151515;
+	--color-footer:#797979;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	color: var(--color-textos);
+	font-weight: 400;
+	line-height: 1.7;
+}
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-titulos);
+}
+
+header{
+	background-color: var(--fondo-header);
+}
+header .bg-light{
+	background-color: transparent !important;
+}
+header img{
+	width: 150px;
+}
+
+#hero{
+	background-image: url("../img/bg-main.jpg");
+	background-size: cover;
+	background-position: top center;
+	
+}
+#hero h6{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+}
+#hero h1{
+	color: #fff;
+	font-size: 60px;
+}
+#hero p{
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.7;
+}
+#hero .btn{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 15px 20px;
+}
+#hero .btn-dark{
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+#hero .btn-dark:hover{
+	background-color: #fff;
+	color: var(--color-negro);
+}
+#hero .btn-light{
+	background-color: #fff;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.40);
+	padding: 10% 0;
+}
+
+.section{
+	padding: 5% 0;
+}
+.titulo{
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.subtitulo{
+	font-size: 18px;
+	color: var(--color-subtitulo);
+	font-weight: 400;
+}
+
+#welcome .titulo{
+	margin-top: 25%;
+}
+
+
+#welcome ul i{
+	color: var(--color-azul);
+}
+#welcome ul{
+	font-size: 15px;
+}
+#welcome li{
+	padding-bottom: 10px;
+}
+
+#welcome.section{
+	padding-bottom: 0;
+}
+
+#icons{
+	background-color: var(--fondo-gris);
+	text-align: center;
+	font-size: 14px;
+	color: var(--color-letra-gris);
+}
+
+#icons h3{
+	font-size: 16px;
+	margin: 15px 0;
+}
+
+#icons i{
+	font-size: 50px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+}
+#icons i:hover{
+	background-color: #fafafa;
+	color: var(--color-azul);
+}
+
+
+#counter{
+	background-image: url("../img/bg-keyboard.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+
+#counter .overlay{
+	background-color: rgba(33,143,230,0.90);
+	padding: 7% 0;
+}
+
+#counter i{
+	font-size: 50px;
+}
+#counter h3{
+	font-size: 50px;
+	color: #fff;
+	margin: 15px 0;
+}
+#counter p{
+	font-size: 18px;
+}
+
+
+#works .card{
+	border-radius: 0;
+	border-color: #eee;
+}
+#works .card h4{
+	font-size: 18px;
+	font-weight: 400;
+}
+#works .card p{
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--color-letra-gris);
+	letter-spacing: 0.3px;
+}
+
+.btn-primary{
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 20px 60px;
+	letter-spacing: 0.5px;
+}
+.btn-primary:hover{
+	background-color: var(--color-titulos);
+	border-color: var(--color-titulos);
+}
+
+
+#footer-columns{
+	background-color: var(--fondo-footer-columns);
+	color: var(--color-footer);
+	padding: 60px 0;
+	font-size: 14px;
+}
+#footer-columns img{
+	width: 180px;
+	margin-bottom: 30px;
+}
+#footer-columns h4{
+	color: #fff;
+	font-size: 16px;
+}
+
+#footer-copy{
+	background-color: var(--fondo-footer-copy);
+	color: var(--color-footer);
+	padding: 20px 0;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
