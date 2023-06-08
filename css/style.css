@@ -13,6 +13,7 @@
 	--fondo-footer-columns:#1b1b1b;
 	--fondo-footer-copy:#151515;
 	--color-footer:#797979;
+	--fondo-title-page:#fafafa;
 }
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -212,6 +213,134 @@ header img{
 	padding: 20px 0;
 	font-size: 13px;
 }
+
+
+#title-page{
+	background-color: var(--fondo-title-page);
+	padding: 40px 0;
+	border-top: 1px solid #eee;
+}
+#title-page h1{
+	font-size: 25px;
+}
+
+
+#carousel .carousel-caption{
+	text-align: end;
+}
+
+#carousel .carousel-caption h2{
+	font-size: 60px;
+	color: #fff;
+	font-weight: 400;
+}
+#carousel .carousel-caption p{
+	font-size: 20px;
+}
+
+
+.capa-overlay{
+	position: absolute;
+	background-color: rgba(0,0,0,0.45);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+.capa-overlay a{
+	background-color: rgba(255,255,255,0.90);
+	color: #333;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 100%;
+	margin-bottom: 5px;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+.capa-overlay a:hover{
+	background-color: rgba(255,255,255,0.60);
+	transition: all 0.3s ease-in-out;
+}
+	
+.capa-hover .capa-overlay{
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+.capa-hover:hover .capa-overlay{
+	opacity: 1;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+.cintillo .capa-overlay{
+	height: inherit;
+	display: inherit;
+	text-align: center;
+	padding: 15px 0;
+	top: inherit;
+	bottom: 0;
+	background-color: #000;
+}
+.cintillo img{
+	transition: all 0.4s ease-in-out;
+}
+.cintillo:hover img{
+	filter: grayscale(1);
+	transition: all 0.4s ease-in-out;
+	transform: scale(1.2);
+}
+.position-relative.cintillo{
+	overflow: hidden;
+}
+
+
+
+.app-carousel {
+    padding: 0 6%;
+}
+.app-carousel .center .single-shot {
+    opacity: 1;
+    transform: scale(1);
+}
+.app-carousel .single-shot {
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.app-carousel .owl-dots {
+    text-align: center;
+}
+.app-carousel .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 2px solid #a49fba !important;
+    border-radius: 50%;
+    margin: 35px 6px;
+}
+.app-carousel .owl-dot.active {
+    background-color: #fb397d;
+    border: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,6 +7,8 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="img/favicon.png" rel="icon">
 </head>
@@ -33,13 +35,13 @@
                             <a class="nav-link" href="#">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
 						<li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact-us.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -166,11 +168,19 @@
 				<h6 class="subtitulo">Check out some of our latest portfolio pieces.</h6>
 			</div>
 			
-			<div class="row">
+			<div class="owl-carousel app-carousel">
 				
-				<article class="col-lg-4 col-sm-12">
+				<article class="">
 					<div class="card">
-						<img src="img/square-15.jpg" class="img-fluid" alt="">
+						
+						<div class="position-relative">
+							<img src="img/square-15.jpg" class="img-fluid" alt="">
+							<div class="capa-overlay">
+								<a href="img/square-15.jpg" data-fancybox="works"><i class="las la-search"></i></a>
+								<a href="#"><i class="las la-link"></i></a>
+							</div>
+						</div>
+						
 						<div class="card-body">
 							<div class="row">
 								<article class="col-lg-6 col-sm-12">
@@ -187,9 +197,17 @@
 					</div>
 				</article>
 				
-				<article class="col-lg-4 col-sm-12">
+				<article class="">
 					<div class="card">
-						<img src="img/square-16.jpg" class="img-fluid" alt="">
+						
+						<div class="position-relative capa-hover">
+							<img src="img/square-16.jpg" class="img-fluid" alt="">
+							<div class="capa-overlay">
+								<a href="img/square-16.jpg" data-fancybox="works"><i class="las la-search"></i></a>
+								<a href="#"><i class="las la-link"></i></a>
+							</div>
+						</div>
+						
 						<div class="card-body">
 							<div class="row">
 								<article class="col-lg-6 col-sm-12">
@@ -206,9 +224,44 @@
 					</div>
 				</article>
 				
-				<article class="col-lg-4 col-sm-12">
+				<article class="">
 					<div class="card">
-						<img src="img/square-14.jpg" class="img-fluid" alt="">
+						
+						<div class="position-relative cintillo">
+							<img src="img/square-14.jpg" class="img-fluid" alt="">
+							<div class="capa-overlay">
+								<a href="#"><i class="las la-search"></i></a>
+								<a href="#"><i class="las la-link"></i></a>
+							</div>
+						</div>
+						
+						<div class="card-body">
+							<div class="row">
+								<article class="col-lg-6 col-sm-12">
+									<h4>The Trip</h4>
+									<p>Mockups</p>
+								</article>
+								<article class="col-lg-6 col-sm-12 text-end">
+									<i class="lar la-heart"></i>
+									<p>20</p>
+								</article>
+							</div>
+							
+						</div>
+					</div>
+				</article>
+				
+				<article class="">
+					<div class="card">
+						
+						<div class="position-relative cintillo">
+							<img src="img/square-17.jpg" class="img-fluid" alt="">
+							<div class="capa-overlay">
+								<a href="#"><i class="las la-search"></i></a>
+								<a href="#"><i class="las la-link"></i></a>
+							</div>
+						</div>
+						
 						<div class="card-body">
 							<div class="row">
 								<article class="col-lg-6 col-sm-12">
@@ -268,6 +321,51 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	
+	<script>
+	
+		$(function(){
+		  
+			Fancybox.bind("[data-fancybox]", {
+			  // Your custom options
+			});
+		  
+			$(".app-carousel").owlCarousel({
+				items: 1,
+				loop: true,
+				autoplay: true,
+				smartSpeed: 800,
+				margin: 30,
+				center: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					480: {
+						items: 2
+					},
+					992: {
+						items: 3
+					}
+				}
+			});
+			
+			
+		  
+		});
+	
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </body>
 </html>
